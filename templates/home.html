@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="static/js/clientside.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  </head>
+  <body>
+
+    <div class="section">
+      <div class="container">
+        <h5>Login Page</h5>
+          <p>Please input your user name and password and click the login button.</p>
+          <form name="login_form" onsubmit="login(this.username_field.value, this.password_field.value); return false;">
+            <div class="row">
+              <label class="col s12 m12 l1" for="username_field" >User Name:</label></td>
+              <input class="col s12 m12 l11" id="username_field" size="30" type="text"></td>
+            </div>
+            <div class="row">
+              <label class="col s12 m12 l1" for="password_field">Password:</label></td>
+              <input class="col s12 m12 l11" id="password_field" size="30" type="password"></td>
+            </div>
+            <div class="row center">
+              <input id="login_button" class="btn" type="submit" value="LOGIN"></td>
+            </div>
+            
+          </form>
+        </div>
+      </div>
+
+
+  </body>
+</html>
